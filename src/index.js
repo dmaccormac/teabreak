@@ -1,4 +1,4 @@
-import Tooltip from "./teatime/tooltip";
+import Tooltip from "./teabreak/tooltip";
 
 //Tooltip
 const tooltips = document.querySelectorAll(".tooltip");
