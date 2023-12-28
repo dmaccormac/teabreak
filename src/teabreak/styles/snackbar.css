@@ -1,0 +1,15 @@
+.snackbar {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: firebrick;
+  color: white;
+  visibility: hidden;
+}
+
+.snackbar.active {
+  visibility: visible;
+}
