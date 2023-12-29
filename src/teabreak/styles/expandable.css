@@ -1,0 +1,7 @@
+.expandable .content.truncated {
+  overflow: hidden;
+  display: block;
+  width: 20%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

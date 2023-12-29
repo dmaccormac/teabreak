@@ -1,3 +1,4 @@
+import Expandable from "./teabreak/expandable";
 import Snackbar from "./teabreak/snackbar";
 import Tooltip from "./teabreak/tooltip";
 
@@ -9,10 +10,16 @@ tooltips.forEach((tooltip) => {
 });
 
 //Snackbar
-const snackbar = new Snackbar(document.querySelector("snackbar-trigger"));
+const snackbar = new Snackbar();
 snackbar.init();
 
-const link = document.querySelector("#snack");
-link.addEventListener("click", () => {
+const trigger = document.querySelector(".snackbar-trigger");
+trigger.addEventListener("click", () => {
   snackbar.show("This is a snackbar");
 });
+
+//expandable
+const e = document.querySelector(".expandable");
+
+const expandable = new Expandable(e);
+expandable.init();
