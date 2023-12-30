@@ -19,7 +19,9 @@ trigger.addEventListener("click", () => {
 });
 
 //expandable
-const e = document.querySelector(".expandable");
+const expandables = document.querySelectorAll(".expandable");
 
-const expandable = new Expandable(e);
-expandable.init();
+expandables.forEach((expandable) => {
+  const e = new Expandable(expandable);
+  e.init();
+});
