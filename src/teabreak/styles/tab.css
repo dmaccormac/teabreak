@@ -1,0 +1,28 @@
+.tabs ul {
+  padding: 0;
+}
+.tabs .trigger {
+  list-style-type: none;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tabs .trigger.active {
+  background-color: silver;
+  font-weight: bold;
+}
+
+.tabs .content {
+  display: none;
+  background-color: silver;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.tabs .content.active {
+  display: block;
+}
